@@ -1,0 +1,3 @@
+BLOCK AND INLINE:
+
+1) block-level element always starts on a new line

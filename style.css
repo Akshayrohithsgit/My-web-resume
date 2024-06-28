@@ -1,0 +1,262 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@keyframes transform {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes transf {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.header{
+background-color:#212428;
+height:150px;
+width:100%;
+box-shadow: 0px 7px 10px black;
+position:sticky;
+}
+.image{
+margin-top:50px;
+margin-left:50px;
+float:left;
+}
+.image img{
+    border-radius: 90px;
+}
+.Name{
+    margin-left: 10px;
+margin-top:15px;
+float:right;
+color:aliceblue;
+}
+.menu{  
+margin-top:50px;
+float:right;
+}
+.menu ul li{
+margin-right:50px;
+display:inline;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.menu ul li a:hover{
+    color:antiquewhite;
+    opacity: 1;
+}
+.bod{
+    background-color: #C4CFDE;
+    /*position: absolute;*/
+    height: 800px;
+    float: left;
+    width: 100%;
+}
+.side{
+    float: left;
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 20px;
+    animation:transform 1s ;
+}
+.right{
+    float: right;
+    width: 40%;
+    animation:transform 0.75s ;
+}
+.right img{
+    height: 300px;
+    width:300px;
+    margin-top: 60px;
+}
+.spans{
+    color: deeppink;
+    transition: 0.5s;
+}
+.footer{
+    background-color:#212428;
+    height: 100px;
+    color:antiquewhite;
+    margin-top: 800px;
+    bottom: 0;
+    position: sticky; 
+}
+.footer ul li{
+    display:inline;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-top: 15px;
+}
+.contact{
+    padding-top: 20px;
+}
+.footer ul li img{
+    height: 20px;
+    width:20px;
+    padding-right: 5px;
+}
+
+.side ul li{
+    font-size: 30px;
+}
+
+.side img{
+    padding: right 15px;
+    
+}
+.side img:hover{
+    transform: rotate(-360deg);
+    transition: 0.5s;
+}
+.first img{
+    margin-left: 30%;
+}
+.first{
+    margin-left: 20px;
+    animation:transform 0.75s ;
+}
+.second{
+    margin-top: 20px;
+    width: 900px;
+    margin-left: 100px;
+    
+    animation:transform 0.75s ;
+}
+.second img{
+    padding-right: 15px;
+}
+#skillright{
+    float: right;
+    
+    animation:transform 0.75s ;
+}
+
+#skillright h4{
+    font-size: medium;
+    transition: 1s;
+}
+#skillright h4:hover{
+    font-size: large;
+}
+#skillleft{
+    float: left;
+    margin-left: 50px;
+    animation:transform 0.75s ;
+}
+#mybtn {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #mybtn:hover {
+    transform: scale(1.1);
+  }
+  
+#mybtn{
+    position: fixed;
+    bottom: 30px;
+    right:20px;
+    cursor: pointer;
+    z-index: 99;
+    transition: 0.5s;
+    animation: transf 0.75s;
+}
+.form-popup {
+    display: none;
+    max-width: 500px;
+    position: absolute;
+    border-radius: 15px;
+    top: 50px;
+    left: 50px;
+    animation: transf 0.75s;
+    width:fitcontent;
+    float: center;
+    margin: auto;
+    background-color: black;
+    color: deeppink;
+    right: 15px;
+    border: 3px solid deeppink;
+    z-index: 9;
+}
+.form-container {
+        max-width: 400px;
+        padding: 10px;
+        
+}
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+#project li{
+    font-size: medium;
+}
+@media screen and (max-width : 1050px) {
+    .header{
+        
+        font-size: medium;
+    }
+    .side{
+        float:right;
+    }
+    .bod{
+        height: 700px;
+    }
+    .right{
+    }
+    .image{
+            margin-top:30px;
+            margin-left: 30px;
+            position: absolute;
+
+    }
+    .Name{
+        
+    font-size: smaller;
+    position: absolute;
+    top: 60;
+    
+    }
+    .menu ul li{
+        margin-right:20px;
+        display:inline;
+    }
+    .footer{
+        background-color:#212428;
+        height: 200px;
+        color:antiquewhite;
+        margin-top: 700px;
+        bottom: 0;
+        position: sticky; 
+    }
+    .footer ul li{
+        padding: 5px;
+        display: block;
+        
+    }
+    .contact{
+        text-align: center;
+    }
+    .spans{
+        color: green;
+        transition: 0.5s;
+    }
+    
+}
